@@ -1,0 +1,40 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="BLOCKLY_TILESET_TYPE" id="u#ad?0trP;pj4KU_5WbU">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable type="BLOCKLY_TILESET_TYPE" id="oUl-|w?CYvT`PXaRW/ED">1;16;16;4444444444444444444444444444444444444444444444444444115114114544444411511411454444441151141145444444111111114544444411111111454444441111111145444444115114114544444411511411454444441151141145444444444444444444444444444444444444444444444444444444444444444444</variable><variable type="BLOCKLY_TILESET_TYPE" id="ViP/-1xGq_=mBrxH88mD">2;16;16;0000000000000000000050555500000000005555510500000000551111050000000055515555000000005511555500000000551551550000000055551155000000005555115500000000501151550000000050155505000000000055550500000000000000000000000000000000000000000000000000000000000000000000</variable><variable id="Qdt+{i|#8*#@]D|FC4)Z">mySprite</variable><variable type="KIND_SpriteKind" id="]#G;EA6RvUDVLc|5:#tc">Player</variable><variable type="KIND_SpriteKind" id="ccQv7$]xUj%fWpxKW-5*">Projectile</variable><variable type="KIND_SpriteKind" id="_BBIEsD79rTJh!%=TfbJ">Food</variable><variable type="KIND_SpriteKind" id="$i_p:.g;niZK7sR*}.8P">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="Qdt+{i|#8*#@]D|FC4)Z">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . 7 7 7 7 7 . . . . . . . . . 
+. 7 7 7 7 7 7 7 . . . . . . . . 
+. 7 7 7 7 7 7 7 7 7 . . . . . . 
+. 7 7 7 7 7 7 7 7 7 7 . . . . . 
+. 7 7 7 7 7 7 7 7 7 7 7 . . . . 
+. 7 7 7 7 7 7 7 7 7 7 7 . . . . 
+. . 7 7 7 7 7 7 7 7 7 7 . . . . 
+. . . . . 7 7 7 7 7 7 7 . . . . 
+. . . . . 7 7 7 7 7 7 7 7 7 7 . 
+. . . . . 7 7 7 7 7 7 7 7 7 7 . 
+. . . . . 1 . 7 7 7 7 7 7 7 7 . 
+. . . . . . 1 1 7 7 7 . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="camerafollow"><value name="sprite"><shadow type="variables_get"><field name="VAR" id="Qdt+{i|#8*#@]D|FC4)Z">mySprite</field></shadow></value><next><block type="tilemap_editor"><field name="tilemap">tiles.createTilemap(
+            hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000020000000000000200000000000200000000020000000000000000000000000000000000000001010101010101010101030101010101050505050500000000000000000000050505050505050000000000000000000505050505050505040000000000000505050505050505050004000000040505050505050505050505000000000505050505050505050505050505050505050505`,
+            img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,sprites.builtin.brick,sprites.dungeon.collectibleInsignia,myTiles.tile1,myTiles.tile2,sprites.dungeon.darkGroundNorthWest1],
+            TileScale.Sixteen
+        )</field><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><shadow type="variables_get"><field name="VAR" id="Qdt+{i|#8*#@]D|FC4)Z">mySprite</field></shadow></value></block></next></block></next></block></next></block></statement></block></xml>
